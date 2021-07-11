@@ -4,6 +4,7 @@
 	"main": "server.js",
 	"scripts": {
 		"start": "node ./build/server.js",
+		"start:local": "yarn build && yarn start",
 		"dev": "tsc-watch --onSuccess \"yarn start\"",
 		"build": "yarn tsc && yarn update-imports",
 		"tsc": "tsc --project tsconfig.json",
