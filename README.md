@@ -73,4 +73,5 @@ Se utilizaron configuraciones para Prettier, ESLint y EditorConfig para poder ma
 ## Explicación a Fondo del Proyecto
 
 Explicar la estructura de Clean Architecture => TODO
+
 Explicar la Inyección de Dependencias => TODO
