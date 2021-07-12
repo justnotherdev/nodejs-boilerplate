@@ -1,0 +1,7 @@
+{
+	"VCAP_SERVICES": {
+		"xsuaa": [{}],
+		"destination": [{}],
+		"connectivity": [{}]
+	}
+}

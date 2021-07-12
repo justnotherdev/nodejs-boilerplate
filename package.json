@@ -1,6 +1,7 @@
 {
 	"name": "<%= name %>",
 	"version": "0.1.0",
+	"description": "<%= description %>",
 	"main": "server.js",
 	"scripts": {
 		"start": "node ./build/server.js",
