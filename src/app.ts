@@ -48,7 +48,7 @@ class App {
 		}
 		// Get XSUAA Credentials
 		loadEnv();
-		//const services = getServices({ uaa: 'uaa_clinicainternacional' });
+		//const services = getServices({ uaa: <xsuaa_instance_name> });
 		//AppLogger.info('app.ts', services);
 		// Passport - Define Auth Strategy
 		//passport.use(new JWTStrategy(services.uaa));
@@ -57,6 +57,11 @@ class App {
 		// Configure Authentication
 		// Load API Routes
 		this._app.use(CONSTANTS.api.prefix, this._apiRouter.routes());
+		// Home Backend Handler (TODO: redirect to home or documentation files)
+		this._app.use('/', (req: Request, res: Response) => notFound(res));
+		// API Default Handler
+		this._app.use('/api', (req: Request, res: Response) => notFound(res));
+		// Backend Default Handler
 		this._app.use((req: Request, res: Response) => notFound(res));
 	}
 
